@@ -1,9 +1,16 @@
+import Carrito from './carrito'
 import './navbar.css'
+
 const Navbar = () => {
     return(
         <nav id = "hud">
             <div id='logo'>
                 Carrrito de cosas 
+            </div>
+            <div>   
+            <Carrito>
+                
+            </Carrito>            
             </div>
            <div>
                <a href="#hud" >
