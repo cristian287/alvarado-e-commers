@@ -1,4 +1,5 @@
 import Carrito from './carrito'
+import Logo from './logo'
 import './navbar.css'
 
 const Navbar = () => {
@@ -6,11 +7,11 @@ const Navbar = () => {
         <nav id = "hud">
             <div id='logo'>
                 Carrrito de cosas 
-            </div>
-            <div>   
-            <Carrito>
                 
-            </Carrito>            
+            </div>
+            <Logo></Logo>
+            <div>   
+            <Carrito></Carrito>            
             </div>
            <div>
                <a href="#hud" >

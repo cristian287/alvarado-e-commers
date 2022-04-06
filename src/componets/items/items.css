@@ -1,0 +1,13 @@
+.border{
+    border: 5px solid red;
+    max-width: 500px;
+
+}
+.venta{
+    width: 400px;
+    margin-left: 50px;
+}
+#itemsOrg #items{
+    display:flex;
+    flex-wrap:wrap-reverse;
+}

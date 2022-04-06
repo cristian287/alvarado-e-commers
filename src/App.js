@@ -1,6 +1,6 @@
 
 import './App.css';
-import Item from './componets/itemListcontainer/itemListcontainer';
+import ItemListcontainer from './componets/itemListcontainer/itemListcontainer';
 import Navbar from './componets/navbar/navbar';
 import Contador from './componets/conter/conter';
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
     <Navbar></Navbar>
-    <Item></Item>
+    <ItemListcontainer></ItemListcontainer>
     <Contador initial={0} stock={10} carrito={onCart}  ></Contador>
       <header className="App-header">
       </header>
