@@ -47,7 +47,19 @@ export const invocarProducts = () => {
             setTimeout ( 
                 () => {
                     resolve (Productos)
-                }, 900)
+                },2000)
+        }
+    )
+
+}
+
+export const ProductsId = (id) => {
+    return new Promise (
+        resolve => {
+            setTimeout ( 
+                () => {
+                    resolve (Productos.find (prod => prod.id === id) )
+                },2000)
         }
     )
 
