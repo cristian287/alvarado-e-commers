@@ -1,6 +1,8 @@
 import './items.css'
+import { Link } from 'react-router-dom'
 const Imagen = (
     {
+        id,
         nombre,
         img,
         descripcion,
@@ -24,12 +26,7 @@ const Imagen = (
             </p>
         </div>
         <div>
-            <p>
-                {precio}
-            </p>
-        </div>
-        <div>
-        <button>Ver detalles de {nombre}</button>
+        <button><Link to={`/Detail/${id}`}>Ver detalles de {nombre}</Link></button> 
         </div>
     </div>
 </div>)}

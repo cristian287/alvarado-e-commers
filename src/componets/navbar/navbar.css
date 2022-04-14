@@ -1,5 +1,11 @@
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
 *{
     font-size: xx-large;
+    color: rgb(255, 0, 0);
 }
 a{
     color: violet;
@@ -40,5 +46,29 @@ a:hover{
     color: blueviolet;
 }
 .logo{
+    margin-top: 15px;
     width: 100px;
+   -webkit-animation: 4s rotate linear infinite;
+    animation: 4s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.logo:hover{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: .2s rotate linear infinite;
+
+}
+#referente{
+    font-size: 50px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 31%, rgba(255,235,0,1) 86%);
+    -webkit-background-clip: text  ;
+    color: transparent;  
+}
+.botones{
+    margin-left: 15px;
+}
+.botones:hover{
+    width: 30px;
+    background-color: chartreuse;
 }

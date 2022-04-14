@@ -9,3 +9,8 @@ body{
 span{
     color: rgb(204, 0, 255);
 }
+.detalles{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+}
