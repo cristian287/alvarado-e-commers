@@ -62,8 +62,7 @@ a:hover{
     font-size: 50px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 31%, rgba(255,235,0,1) 86%);
-    -webkit-background-clip: text  ;
-    color: transparent;  
+    color: black;  
 }
 .botones{
     margin-left: 15px;

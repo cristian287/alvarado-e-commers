@@ -19,6 +19,7 @@ function App() {
           <Route path="/" element={<ItemListcontainer></ItemListcontainer>}></Route>
           <Route path="/Detail/:ProductId" element={<DetailList></DetailList>}></Route>
           <Route path='/categories/:categoriesId' element={<ItemListcontainer></ItemListcontainer>}></Route>
+          <Route path="/cart" element={<div> me gusta ver a tu hija salir del jardin... </div>}></Route>
         </Routes>
       </BrowserRouter>
       <header className="App-header">
