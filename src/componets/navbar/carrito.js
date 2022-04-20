@@ -1,12 +1,15 @@
+import { useContext } from "react";
+import CartContext from "../contex/cartContex";
 import "./navbar.css";
 const Carrito = () => {
+    const {cantidadCarrito} = useContext (CartContext) 
     return(
         <div>
             <button>
                 <img className="CarlosCarlin" src={require("./carlitos.png")} alt="carlitos.png"></img>   
             </button>
              <p className="numeral" >
-                    19    
+                     {cantidadCarrito ()}    
             </p>
         </div>
     )
