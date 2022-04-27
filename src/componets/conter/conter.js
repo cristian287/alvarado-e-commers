@@ -26,7 +26,7 @@ const Contador = ({ initial, stock, carrito })=>  {
         <div>
             <div className="contador">
                 <button onClick={Resta}> - </button>
-                <p className="display"> {count} </p>
+                <div className="display">{count}</div> 
                 <button onClick={Suma}> + </button>
             </div>
             <button className="compra" onClick={() => carrito (count) }>  agregar al carrito  </button>

@@ -31,7 +31,7 @@ const ItemDetail= ({id, nombre,img,precio, stock, descripcion} ) =>  {
             </div>
             <div>
                 <p>
-                    <div>stock:{stock}</div> 
+                    <p>stock:{stock}</p>
                     {consultarCarrito(id)? <Link to = "/cart"> ver el contedido del carrito </Link> : <Contador initial={1} {...id} stock = {stock} carrito={addCart}  ></Contador> }
                 </p>
             </div>

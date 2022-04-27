@@ -1,8 +1,9 @@
 import "./items.css"
 import ItemList from "../items/itemsList"
 import { useState,useEffect } from "react"
-import { invocarProducts } from "../../mockAsink"
 import { useParams } from "react-router-dom"
+import { collection, getDocs, query, where } from "firebase/firestore"
+import { firestoreDb } from "../../services/firebase"
 
 const ItemListcontainer = () => {
     const [
@@ -10,9 +11,17 @@ const ItemListcontainer = () => {
     ] = useState ([])
     const {categoriesId}= useParams ()
     useEffect ( () => {
-        invocarProducts (categoriesId).then (prods => {
-            setProductos (prods)
-        }).catch (error => {console.log (" err this not work because i am god")})    
+        const collectionRef = categoriesId 
+        ? query ( collection ( firestoreDb , "Productos"),where ("category","==",categoriesId))
+        : collection (firestoreDb, "Productos") 
+        getDocs(collectionRef).then (response => {
+            console.log (response)
+            const products = response.docs.map (doc => {
+                return {id:doc.id,...doc.data()}
+            })
+            setProductos (products)
+            console.log (products)
+        })
     },[categoriesId] ) 
     return (
         <div>
