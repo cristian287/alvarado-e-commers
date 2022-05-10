@@ -4,6 +4,9 @@ import { useState,useEffect } from "react"
 import { useParams } from "react-router-dom"
 import { collection, getDocs, query, where } from "firebase/firestore"
 import { firestoreDb } from "../../services/firebase"
+import Eye from "./ejeball"
+import Risitas from "./sonrisa"
+import BrazoCartel from "./cartel"
 
 const ItemListcontainer = () => {
     const [
@@ -26,10 +29,16 @@ const ItemListcontainer = () => {
     return (
         <div>
         <div className="items">
-            Esta listo para la venta...<span>NO...?</span> 
+           <Eye></Eye> Esta listo para sonreir?...<span>NO...?</span> <Eye></Eye>
+        </div>
+        <div>
+            <Risitas></Risitas>  
+            <BrazoCartel></BrazoCartel>
         </div>
         <ItemList productos={productos}> </ItemList>
+        
         </div>
+      
     )
 }
 export default ItemListcontainer

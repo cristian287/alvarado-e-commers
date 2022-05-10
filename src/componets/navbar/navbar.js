@@ -5,7 +5,7 @@ import { firestoreDb } from '../../services/firebase'
 import Carrito from './carrito'
 import Logo from './logo'
 import './navbar.css'
-
+import Smay from './smay'
 const Navbar = () => {
     const [categories,setCategories]=useState([])
     useEffect(()=> {
@@ -19,7 +19,8 @@ const Navbar = () => {
     return(
         <nav id = "hud">
             <div id='referente'>
-                the happy hour
+                the happy h<Smay></Smay>ur
+                
             </div>
             <Logo></Logo>
             <div>   

@@ -1,16 +1,94 @@
+.eye {
+    animation-name: view;
+  }
+  
+  @keyframes view{
+    from {
+      margin-left: 1%;
+    }
+  
+    to {
+      margin-left: -1%;
+      width: 100%;
+      opacity: 60%;
+    }
+  }
+  
+.bor{
+  border: 5px solid red;
+  min-height: 550px;
+}
 body{
    background-color: black;
 }
 .items{
     color: red;
     text-align: center;
-    background-color: rgb(27, 1, 255);
+    display: flex;
+    justify-content: center;
 }
 span{
-    color: rgb(204, 0, 255);
+    color: rgba(255, 0, 0, 0.521);
 }
-.detalles{
-    display: flex;
-    flex-direction: column;
-   text-align: center;
+.eye{
+    justify-content: center;
+    padding-top: -190px;
+    height:200px;
+    animation-duration: .1s;
+    animation-name: view;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+.risita{
+    height: 400px;
+    margin-left: 500px;
+    margin-bottom: -100px;
+    margin-top: -200px;
+    
+}.detalles{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.obj{
+  border: 5px solid red;
+  display:flex;
+  flex-direction: column;
+  max-height: fit-content;
+  min-height: 550px;
+}
+.desck{
+  max-width: fit-content;
+}
+.consult{
+  padding-top: -1000px;
+}
+.contenedorImg{
+  width: fit-content;
+  height: fit-content;
+}
+.sitioImg img{
+  height: 300px;
+  width: auto;
+  border: 5px solid red;
+}
+.angry{
+  max-height: 1px;
+  max-width: 1px;
+  margin-left: 400px;
+  margin-top:-200px
+  
+}
+
+
+.cartel{
+  position: fixed;
+  padding-left: 1050px;
+  height: 45px;
+  width: 45px;
+  animation-duration: 2s;
+  animation-name: view;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }

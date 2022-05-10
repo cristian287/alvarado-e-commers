@@ -2,28 +2,25 @@
     color:violet;
 }
 .contador{
+    height: auto;
+    width: 300px;
     display: flex;
     flex-direction: row;
-    margin-top: 150px;
-    margin-left: 100px;
-    justify-content: center;
     cursor: crosshair;
-    
 }
-.display{
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.compra{
-    display: flex;
-    margin-left: 605px;
-    margin-top: 50px;
-}
+
 button{
     background-color: aqua;
+    width:fit-content;
+    height: fit-content;
+
 }
 button:hover{
     background-color: blueviolet;
     color: chartreuse;
     cursor: grab;
+}
+.display{
+    height: fit-content;
+    width: fit-content;
 }

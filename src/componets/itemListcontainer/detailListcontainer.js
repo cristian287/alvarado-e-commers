@@ -21,7 +21,7 @@ const DetailList= () => {
     return (
         <div>
            <div>
-                <ItemDetail {...productos}></ItemDetail>
+           <ItemDetail {...productos}></ItemDetail>
             </div>
         </div>
         

@@ -20,7 +20,10 @@ a:hover{
 #hud{
    display: flex;
    justify-content: space-around;
-   background-color: aqua;
+   font-size: 50px;
+   background: rgb(0,0,0);
+   background: linear-gradient(0deg, rgba(0,0,0,1) 31%, rgba(255,235,0,1) 86%);
+   color: black;  
    min-height: 20vh;
 }
 #logo{
@@ -59,10 +62,13 @@ a:hover{
 
 }
 #referente{
+    display: flex;
+    justify-content: flex-start;
     font-size: 50px;
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 31%, rgba(255,235,0,1) 86%);
-    color: black;  
+    color: rgb(0, 0, 0);  
+    margin-left: -56px;
 }
 .botones{
     margin-left: 15px;
@@ -70,4 +76,10 @@ a:hover{
 .botones:hover{
     width: 30px;
     background-color: chartreuse;
+}
+.smay{
+    padding-top:24px;
+    height: 55px;
+    padding-left:-100;
+    overflow: wrap;
 }

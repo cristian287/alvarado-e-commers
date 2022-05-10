@@ -4,6 +4,7 @@ import CartContext from "../contex/cartContex";
 import { Link } from "react-router-dom";
 import {collection, getDocs, query, where, documentId, addDoc, writeBatch} from "firebase/firestore"
 import {firestoreDb} from "../../services/firebase"
+import "./cart.css"
 
 const Carrito = () => {
     const crearOrdendecompra = () => {
@@ -55,12 +56,15 @@ const Carrito = () => {
     return(
         <div>
             {carrito.map (prod =>
-                <div key= {prod.id}>
-                    <img src={prod.img} alt ="error">
-                    </img>
-                    producto: {prod.nombre}
-                    precio: {prod.precio}
-                    cantidad: {prod.quantity}
+                <div key= {prod.id} className ="carlos">
+                    <div>
+                    <img src={prod.img} alt ="error"></img>
+                    </div>
+                    <div>
+                        producto: {prod.nombre}
+                        precio: {prod.precio}
+                        cantidad: {prod.quantity}
+                    </div>
                     <div>
                         <button onClick={e => eliminarItem(prod.id)}>
                            eliminar producto 
@@ -81,9 +85,11 @@ const Carrito = () => {
             </div>
             }
             <div>
+               
                 <button onClick={crearOrdendecompra}>
-                    comprar
+                 <Link to = '/' >comprar</Link>
                 </button>
+               
             </div>
         </div>
     )

@@ -1,5 +1,6 @@
 import {useState,useEffect} from "react";
 import "./conter.css"
+import MinusS from "./minusSmay";
 
 const Contador = ({ initial, stock, carrito })=>  {
     const [count, setCount ] = useState (initial)
@@ -23,13 +24,15 @@ const Contador = ({ initial, stock, carrito })=>  {
         }
     }
     return (
-        <div>
+        <div className="contra">
             <div className="contador">
-                <button onClick={Resta}> - </button>
-                <div className="display">{count}</div> 
-                <button onClick={Suma}> + </button>
+                <div className="resta" ><button onClick={Resta}> - </button></div>
+                <div className="suma"> <button onClick={Suma}><MinusS ></MinusS></button> </div>
+                <div className="display">en el carrito = {count}</div> 
             </div>
-            <button className="compra" onClick={() => carrito (count) }>  agregar al carrito  </button>
+            <div className="compra " >
+                <button  onClick={() => carrito (count) }> agregar al carrito  </button>
+            </div>
         </div>
     )
 
