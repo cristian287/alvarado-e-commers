@@ -59,18 +59,17 @@ este proyecto usa estas colecciones :
 
  # --- funcionamiento ---
  
- esta pagina empieza en el index (./) donde se muestran los elementos del "ItemListContainer" , en este punto los elementos nos esta clasificados, 
- estan solo mostrados.
- para clasificarlo se debe elegir una categoria de las que se encuentran en el "navbar" al tocar una categoria el "firebase" encuentras discrepancias en el codigo y manda solo los articulos que corresponden a esa categoria,
- cuando un articulo es de su interes y quiere ver mas informacion, solo se debe dar click en "ver mas informacion" y gracias a detailListcontainer que es lo que se empieza a mostrar apartir de ahi. 
- el detailListcontainer pasa a mostrar informacion del articulo elegido mostrando : nombre, despcripcion, precio, y cantidad de stock.
- ademas de visualizarse el conter, el cual es un display para elegir la cantidad del elemento a comprar (el mismo evita que se pase del stock disponible y tambien evita compras en 0 o negativa ), entonces una ves seleccionado se pasa al "carrito"
+ esta pagina empieza en el index (./) donde se muestran los elementos del "ItemListContainer" , en este punto los elementos no esta clasificado
+ para clasificarlo se debe elegir una categoria de las que se encuentran en el "navbar", al tocar una el "firebase" (base de datos) encuentras analiza los articulos y manda solo los que corresponden a esa categoria,
+ cuando un articulo es de su interes y quiere ver mas informacion, solo se debe dar click en "ver mas informacion" y gracias a detailListcontainer se muestra. 
+ el detailListcontainer pasa a mostrar informacion del articulo elegido mostrando : nombre, descripcion, precio, y cantidad de stock.
+ ademas de visualizarse el conter, el cual es un display para elegir la cantidad del elemento a comprar (el mismo evita que se pase del stock disponible y evita compras en 0 o negativa ), entonces una vez seleccionado se pasa al "carrito"
  
- ahora y una ves agregado uno o varios del stock del item al carrito  aparecera su icono en el nav bar 
- al darle click se podra acceder a el y el mismo estara presente en toda la pagina ya que esta en el nav bar
+ ahora y una ves agregado uno o varios items al carrito  aparecera un icono en el nav bar 
+ al darle click se podra acceder al mismo.
  
- en el nav bar tambien estara el panel de login, el que sera requerido para poder loguearte en la pagina, ya que para hacer la orden de compra se requiere una cuenta  en cuyo caso de no tener cuenta se puede tocar el boton de registrarte para que te lleve al formulario "register" y poder realizar dicha accion 
+ en el nav bar tambien estara el panel de login, el que sera requerido para poder loguearte en la pagina, ya que para hacer la orden de compra se requiere una cuenta.  en cuyo caso de no tener una se puede tocar el boton de registrarte para que te lleve al formulario "register" y poder realizar dicha accion 
  
- una ves logueado ya se puede acceder al a la orden de compra ya que la accion de comprar solo es accesible con una cuenta,
- una ves hecho eso listo.
+ una vez logueado ya se puede acceder a la orden de compra ya que la accion de comprar solo es accesible estando logueado,
+ una vez hecho eso listo.
  puede disfrutar de su espacio liminal 
