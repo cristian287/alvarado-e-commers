@@ -72,4 +72,15 @@ este proyecto usa estas colecciones :
  
  una vez logueado ya se puede acceder a la orden de compra ya que la accion de comprar solo es accesible estando logueado,
  una vez hecho eso listo.
- puede disfrutar de su espacio liminal 
+ puede disfrutar de su espacio liminal
+ 
+# --- Asi se ve una ves ensamblada ---
+
+![happy hour](https://user-images.githubusercontent.com/92070526/168915463-e0de57a0-7d38-4c22-840f-db912a062848.gif)
+
+
+# --- Muchas gracias por la atencion ---
+
+
+# --- fin del comunicado ---
+
