@@ -1,8 +1,16 @@
+
+body{
+    color:yellow;
+    font-size: xx-large;
+}
 .err{
     display: none;
 }
-img{
-
+button{
+    background:none
+}
+button:hover{
+    border: .5px solid white;
 }
 
 

@@ -12,9 +12,14 @@
   }
 .sady{
     position: sticky;
-    height: 175px;
+    height: 150px;
     animation-duration: 5s;
     animation-name: valance;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+.sadyB{
+    height: 0px;
+    position: static;
+
 }

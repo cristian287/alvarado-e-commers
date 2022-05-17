@@ -1,26 +1,19 @@
-*{
-    color:violet;
+.botu img{
+    height: 80px;
+    position: relative;
+}
+
+.compra{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
 }
 .contador{
-    height: auto;
-    width: 300px;
     display: flex;
     flex-direction: row;
-    cursor: crosshair;
 }
-
-button{
-    background-color: aqua;
-    width:fit-content;
-    height: fit-content;
-
-}
-button:hover{
-    background-color: blueviolet;
-    color: chartreuse;
-    cursor: grab;
-}
-.display{
-    height: fit-content;
-    width: fit-content;
+.buys{
+    color: white;
+    font-size: xx-large;
+    text-decoration: double;
 }

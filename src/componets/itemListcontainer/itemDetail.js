@@ -1,4 +1,4 @@
-import {useContext} from 'react';
+import {useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
 import Contador from '../conter/conter';
 import CartContext from '../contex/cartContex';
@@ -6,12 +6,22 @@ import "./items.css"
 import Sady from './sadSmay';
 
 const ItemDetail= ({id, nombre,img,precio, stock, descripcion} ) =>  {
-    const {consultarCarrito}= useContext (CartContext)
-    const {addItem} = useContext(CartContext)
+    const {consultarCarrito, addItem, sumarItem, checkStock}= useContext (CartContext)
+    const [toCart, setToCart] = useState (0)
+    const stockActual = checkStock (stock, id)
+
+    
     const addCart = (count) => {
-        console.log ("la puerca esta en la pocilga. compra realizada")
-        const objetoSeleccionado = {id, precio, img, nombre}
-        addItem ({...objetoSeleccionado, quantity:count})
+        setToCart (count)
+        if (consultarCarrito (id)) {
+            sumarItem (count,id) 
+        }
+         else{
+                console.log ("la puerca esta en la pocilga. compra realizada")
+                const objetoSeleccionado = {id, precio, img, nombre}
+                addItem ({...objetoSeleccionado, quantity:count})
+         }
+        
         }
 
     return(
@@ -23,31 +33,29 @@ const ItemDetail= ({id, nombre,img,precio, stock, descripcion} ) =>  {
                     </p>
                     <div>
                 <p className='consult'>
-                    {consultarCarrito(id)? <Link to = "/cart"> ver el contedido del carrito </Link> : <Contador initial={1} {...id} stock = {stock} carrito={addCart}  ></Contador> }
+                    {toCart>0? <Link to = "/cart"> ver el contedido del carrito </Link> : <Contador initial={0} {...id} stock = {stockActual} carrito={addCart}  ></Contador> }
                 </p>
             </div> 
                 </div>
                 <div className="obj">
                     <div>
-                        <p>
-                        <span> {nombre} </span> 
+                        <p className='title'>
+                        <span > {nombre} </span> 
                         </p>
                     </div>
                     <div>
                         <p className='desck'>
                        <span>descripcion:</span>  {descripcion}
                         </p>
-                    </div>
-                    <div>
-                        <p>
+                             <p className='press'>
                    valor : <span>₿{precio}</span> 
                         </p>
-                        <p>
-                            stock:{stock}
+                        <p className='stock'>
+                            stock:{stockActual}
                         </p>
-                        <div className='angry'>
+                        <p className='angry'>
                             <Sady></Sady>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>

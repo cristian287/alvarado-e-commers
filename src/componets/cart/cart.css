@@ -1,4 +1,20 @@
 .carlos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+}
+.eliminar{
+    background-color: red;
+}
+.image{
+    height: 100px;
+}
+.elim{
+    
+}
+.empy{
+    background-color: red;
+}
+.buy{
+    background-color: green;
+    font-size: xx-large;
 }

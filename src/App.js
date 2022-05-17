@@ -7,6 +7,7 @@ import DetailList from './componets/itemListcontainer/detailListcontainer';
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CartContextProvider } from './componets/contex/cartContex';
 import Carrito from './componets/cart/cart';
+import RegisterAccount from './componets/register/Register';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/Detail/:ProductId" element={<DetailList></DetailList>}></Route>
           <Route path='/categories/:categoriesId' element={<ItemListcontainer></ItemListcontainer>}></Route>
           <Route path="/cart" element={<Carrito></Carrito>}></Route>
+          <Route path='/register' element={<RegisterAccount></RegisterAccount>}></Route>
         </Routes>
       </BrowserRouter>
       </CartContextProvider>

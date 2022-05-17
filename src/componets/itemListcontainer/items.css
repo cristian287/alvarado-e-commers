@@ -5,6 +5,7 @@
   @keyframes view{
     from {
       margin-left: 1%;
+     
     }
   
     to {
@@ -13,26 +14,24 @@
       opacity: 60%;
     }
   }
-  
 .bor{
   border: 5px solid red;
-  min-height: 550px;
+
 }
 body{
    background-color: black;
 }
 .items{
-    color: red;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  color: red;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
 }
 span{
     color: rgba(255, 0, 0, 0.521);
 }
 .eye{
-    justify-content: center;
-    padding-top: -190px;
     height:200px;
     animation-duration: .1s;
     animation-name: view;
@@ -41,10 +40,11 @@ span{
   }
 
 .risita{
-    height: 400px;
-    margin-left: 500px;
-    margin-bottom: -100px;
-    margin-top: -200px;
+  position: static;
+    height: 450px;
+    margin-left: 455px;
+    margin-bottom: -75px;
+    margin-top: -350px;
     
 }.detalles{
   display: grid;
@@ -52,11 +52,13 @@ span{
   grid-gap: 10px;
 }
 .obj{
+  position: static;
   border: 5px solid red;
   display:flex;
   flex-direction: column;
   max-height: fit-content;
-  min-height: 550px;
+  min-height: 500px;
+
 }
 .desck{
   max-width: fit-content;
@@ -74,21 +76,25 @@ span{
   border: 5px solid red;
 }
 .angry{
-  max-height: 1px;
-  max-width: 1px;
   margin-left: 400px;
-  margin-top:-200px
+  margin-top: -190px
   
 }
-
-
 .cartel{
+  max-width: fit-content;
   position: fixed;
-  padding-left: 1050px;
-  height: 45px;
-  width: 45px;
   animation-duration: 2s;
   animation-name: view;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; 
+  padding-left: 1050px;
+  
+  transition: 10s;
+}
+.cartel:hover{
+  height: 0px;
+
+}
+.face{
+  position: relative;
 }

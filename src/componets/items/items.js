@@ -26,7 +26,7 @@ const Imagen = (
             </p>
         </div>
         <div>
-        <button><Link to={`/Detail/${id}`}>Ver detalles de {nombre}</Link></button> 
+        <button className='detalles'><Link to={`/Detail/${id}`}>Ver detalles de {nombre}</Link></button> 
         </div>
     </div>
 </div>)}

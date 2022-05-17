@@ -2,11 +2,6 @@
     to {transform: rotate(360deg);}}
 @-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
   to {-webkit-transform: rotate(360deg);}}
-
-*{
-    font-size: xx-large;
-    color: rgb(255, 0, 0);
-}
 a{
     color: violet;
     text-decoration: none;
@@ -68,10 +63,12 @@ a:hover{
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 31%, rgba(255,235,0,1) 86%);
     color: rgb(0, 0, 0);  
-    margin-left: -56px;
+
 }
 .botones{
     margin-left: 15px;
+    font-size: xx-large;
+    background-color: blueviolet;
 }
 .botones:hover{
     width: 30px;

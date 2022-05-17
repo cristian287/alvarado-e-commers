@@ -1,0 +1,27 @@
+
+.form{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    direction: bottom;
+    max-width: fit-content;
+    font-size: xx-small;
+
+}
+.pass{
+    color: black;
+}
+.regis{
+    font-size: 20px
+}
+.enter{
+    font-size: xx-small;
+}
+.logeado{
+    font-size: xx-large;
+}
+.error3312{
+    transition-delay: 3;
+    background-color: blanchedalmond;
+    font-size: 12px;
+}

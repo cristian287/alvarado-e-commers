@@ -29,11 +29,12 @@ const ItemListcontainer = () => {
     return (
         <div>
         <div className="items">
-           <Eye></Eye> Esta listo para sonreir?...<span>NO...?</span> <Eye></Eye>
+           <Eye></Eye>Esta listo para sonreir?...<span>NO...?</span><Eye></Eye>
         </div>
         <div>
-            <Risitas></Risitas>  
             <BrazoCartel></BrazoCartel>
+            <Risitas></Risitas>  
+            
         </div>
         <ItemList productos={productos}> </ItemList>
         

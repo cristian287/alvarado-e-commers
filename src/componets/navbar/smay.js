@@ -1,8 +1,9 @@
 import "./navbar.css";
+import { Link } from "react-router-dom";
 const Smay = () => {
     return(
         <div>
-           <img src={require("./lsd smaily.png")} alt="smay" className="smay"></img>
+         <Link to={"./"}><img src={require("./lsd smaily.png")} alt="smay" className="smay"></img> </Link>  
         </div>
     )
 }

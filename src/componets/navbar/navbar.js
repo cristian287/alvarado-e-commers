@@ -1,11 +1,13 @@
 import { collection, getDocs } from 'firebase/firestore'
 import { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import {NavLink } from 'react-router-dom'
 import { firestoreDb } from '../../services/firebase'
 import Carrito from './carrito'
 import Logo from './logo'
 import './navbar.css'
 import Smay from './smay'
+import LoginInfo from '../LoginInfo/LoginInfo'
+
 const Navbar = () => {
     const [categories,setCategories]=useState([])
     useEffect(()=> {
@@ -13,6 +15,7 @@ const Navbar = () => {
             const categories = response.docs.map (doc=>{
                 return { id:doc.id,...doc.data()}
             })
+            console.log(categories)
             setCategories(categories)
         })
         },[])
@@ -22,6 +25,7 @@ const Navbar = () => {
                 the happy h<Smay></Smay>ur
                 
             </div>
+            <LoginInfo></LoginInfo>
             <Logo></Logo>
             <div>   
             <Carrito></Carrito>            
